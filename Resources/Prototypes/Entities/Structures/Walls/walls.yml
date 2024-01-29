@@ -450,7 +450,7 @@
         - Wall
     - type: Sprite
       sprite: NT14/Structures/Walls/solid.rsi
-      color: a7a3a6
+      color: "#a7a3a6"
     - type: Icon
       sprite: Structures/Walls/plastitanium.rsi
     - type: IconSmooth
@@ -510,6 +510,7 @@
   components:
   - type: Sprite
     sprite: NT14/Structures/Walls/solid.rsi
+    color: "#889192"
   - type: Icon
     sprite: NT14/Structures/Walls/solid.rsi
     state: rgeneric
@@ -543,7 +544,7 @@
         acts: ["Destruction"]
   - type: IconSmooth
     key: walls
-    base: reinf_over
+    base: solid
   - type: Appearance
   - type: GenericVisualizer
     visuals:

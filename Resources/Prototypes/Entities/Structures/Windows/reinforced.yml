@@ -1,3 +1,7 @@
+# NT14 changes:
+# Sprite folders here that have been changed to use NT14-specific sprites have
+# base folder equilvalents that can be removed to save space if/when space wizards upstream is no longer used
+
 - type: entity
   id: ReinforcedWindow
   name: reinforced window
@@ -5,9 +9,9 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/reinforced_window.rsi
+    sprite: NT14/Structures/Windows/reinforced_window.rsi
   - type: Icon
-    sprite: Structures/Windows/reinforced_window.rsi
+    sprite: NT14/Structures/Windows/reinforced_window.rsi
   - type: Repairable
     fuelCost: 10
     doAfterDelay: 2
@@ -59,11 +63,10 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/tinted_window.rsi
-  - type: Icon
-    sprite: Structures/Windows/tinted_window.rsi
+    sprite: NT14/Structures/Windows/reinforced_window.rsi
+    color: "#000000"
   - type: IconSmooth
-    base: twindow
+    base: rwindow
   - type: Construction
     graph: Window
     node: tintedWindow
