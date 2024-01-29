@@ -1,3 +1,7 @@
+# NT14 change:
+# Sprite folders here that have been changed to use NT14-specific sprites have
+# base folder equilvalents that can be removed to save space if/when space wizards upstream is no longer used
+
 - type: entity
   abstract: true
   parent: BaseStructure
@@ -498,9 +502,9 @@
   name: reinforced wall
   components:
   - type: Sprite
-    sprite: Structures/Walls/solid.rsi
+    sprite: NT14/Structures/Walls/solid.rsi
   - type: Icon
-    sprite: Structures/Walls/solid.rsi
+    sprite: NT14/Structures/Walls/solid.rsi
     state: rgeneric
   - type: Construction
     graph: Girder
@@ -839,12 +843,12 @@
       - Wall
       - RCDDeconstructWhitelist
   - type: Sprite
-    sprite: Structures/Walls/solid.rsi
+    sprite: NT14/Structures/Walls/solid.rsi
   - type: Construction
     graph: Girder
     node: wall
   - type: Icon
-    sprite: Structures/Walls/solid.rsi
+    sprite: NT14/Structures/Walls/solid.rsi
   - type: Destructible
     thresholds:
     - trigger:

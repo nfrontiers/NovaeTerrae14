@@ -1,3 +1,7 @@
+# NT14 change:
+# Sprite folders here that have been changed to use NT14-specific sprites have
+# base folder equilvalents that can be removed to save space if/when space wizards upstream is no longer used
+
 - type: construction
   name: girder
   id: Girder
@@ -7,7 +11,7 @@
   category: construction-category-structures
   description: A large structural assembly made out of metal.
   icon:
-    sprite: /Textures/Structures/Walls/solid.rsi
+    sprite: /Textures/NT14/Structures/Walls/solid.rsi
     state: wall_girder
   objectType: Structure
   placementMode: SnapgridCenter
@@ -25,7 +29,7 @@
   category: construction-category-structures
   description: A large structural assembly made out of metal and plasteel.
   icon:
-    sprite: /Textures/Structures/Walls/solid.rsi
+    sprite: /Textures/NT14/Structures/Walls/solid.rsi
     state: reinforced_wall_girder
   objectType: Structure
   placementMode: SnapgridCenter
@@ -43,7 +47,7 @@
   category: construction-category-structures
   description: Keeps the air in and the greytide out.
   icon:
-    sprite: Structures/Walls/solid.rsi
+    sprite: NT14/Structures/Walls/solid.rsi
     state: full
   objectType: Structure
   placementMode: SnapgridCenter
@@ -61,7 +65,7 @@
   category: construction-category-structures
   description: Keeps the air in and the greytide out.
   icon:
-    sprite: Structures/Walls/solid.rsi
+    sprite: NT14/Structures/Walls/solid.rsi
     state: rgeneric
   objectType: Structure
   placementMode: SnapgridCenter
