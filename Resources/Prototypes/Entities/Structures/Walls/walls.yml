@@ -510,7 +510,6 @@
   components:
   - type: Sprite
     sprite: NT14/Structures/Walls/solid.rsi
-    color: "#889192"
   - type: Icon
     sprite: NT14/Structures/Walls/solid.rsi
     state: rgeneric
@@ -544,7 +543,7 @@
         acts: ["Destruction"]
   - type: IconSmooth
     key: walls
-    base: solid
+    base: reinf
   - type: Appearance
   - type: GenericVisualizer
     visuals:
