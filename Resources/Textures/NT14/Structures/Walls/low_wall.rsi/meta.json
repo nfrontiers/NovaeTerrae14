@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from https://github.com/discordia-space/CEV-Eris/ and modified",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "full"
+    },
+    {
+      "name": "metal0",
+      "directions": 4
+    },
+    {
+      "name": "metal1",
+      "directions": 4
+    },
+    {
+      "name": "metal2",
+      "directions": 4
+    },
+    {
+      "name": "metal3",
+      "directions": 4
+    },
+    {
+      "name": "metal4",
+      "directions": 4
+    },
+    {
+      "name": "metal5",
+      "directions": 4
+    },
+    {
+      "name": "metal6",
+      "directions": 4
+    },
+    {
+      "name": "metal7",
+      "directions": 4
+    }
+  ]
+}
