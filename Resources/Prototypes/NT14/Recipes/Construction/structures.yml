@@ -1,0 +1,18 @@
+
+- type: construction
+  name: low wall
+  id: WallLow
+  graph: Girder
+  startNode: start
+  targetNode: lowWall
+  category: construction-category-structures
+  description: A chest-high wall.
+  icon:
+    sprite: NT14/Structures/Walls/low_wall.rsi
+    state: full
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked

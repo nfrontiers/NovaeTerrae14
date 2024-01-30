@@ -13,8 +13,8 @@
     sprite: NT14/Structures/Walls/low_wall.rsi
     color: "#434b4d"
   - type: Icon
-    sprite: NT14/Structures/Walls/solid.rsi
-    state: metal
+    sprite: NT14/Structures/Walls/low_wall.rsi
+    state: full
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: StructuralMetallic
@@ -29,6 +29,10 @@
         layer:
         - TableLayer
         density: 500
+  - type: CanBuildWindowOnTop
+  - type: Tag
+    tags: #Having evaluated, the "Wall" tag is not appropriate here
+      - RCDDeconstructWhitelist
   - type: Climbable
   - type: Destructible
     thresholds:
@@ -54,6 +58,9 @@
             max: 2
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+  - type: Construction
+    graph: Girder
+    node: lowWall
   - type: IconSmooth
     key: walls
     base: metal

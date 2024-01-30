@@ -40,6 +40,18 @@
               amount: 2
               doAfter: 2
 
+        ## NT-14 change: low wall
+        - to: lowWall
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          conditions:
+            - !type:EntityAnchored {}
+          steps:
+            - material: MetalRod
+              amount: 4
+              doAfter: 4
+
         - to: reinforcedGirder
           completed:
             - !type:SnapToGrid
@@ -172,6 +184,19 @@
           steps:
             - tool: Welding
               doAfter: 10
+
+    ## NT14 change: low wall
+    - node: lowWall
+      entity: WallLow
+      edges:
+        - to: girder
+          completed:
+            - !type:GivePrototype
+              prototype: PartRodMetal1
+              amount: 4
+          steps:
+            - tool: Welding
+              doAfter: 5
 
     - node: woodWall
       entity: WallWood
