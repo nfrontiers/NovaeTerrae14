@@ -41,6 +41,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
+    key: walls
     base: pwindow
   - type: Construction
     graph: Window
