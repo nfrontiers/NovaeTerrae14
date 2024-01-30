@@ -1,3 +1,5 @@
+## NT 14 change: cannot build windows on top of grilles
+
 - type: entity
   id: Grille
   parent: BaseStructure
@@ -12,7 +14,6 @@
     - type: Tag
       tags:
         - RCDDeconstructWhitelist
-    - type: CanBuildWindowOnTop
     - type: Sprite
       drawdepth: Walls
       sprite: Structures/Walls/grille.rsi

@@ -1,3 +1,7 @@
+# NT14 change:
+# Sprite folders here that have been changed to use NT14-specific sprites have
+# base folder equilvalents that can be removed to save space if/when space wizards upstream is no longer used
+
 - type: job
   id: Mime
   name: job-name-mime
@@ -44,5 +48,5 @@
   - type: InstantAction
     priority: -1
     useDelay: 30
-    icon: Structures/Walls/solid.rsi/full.png
+    icon: NT14/Structures/Walls/solid.rsi/full.png
     event: !type:InvisibleWallActionEvent

@@ -1,3 +1,7 @@
+# NT14 changes:
+# Sprite folders here that have been changed to use NT14-specific sprites have
+# base folder equilvalents that can be removed to save space if/when space wizards upstream is no longer used
+
 - type: entity
   id: PlasmaWindow
   name: plasma window
@@ -5,9 +9,9 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/plasma_window.rsi
+    sprite: NT14/Structures/Windows/plasma_window.rsi
   - type: Icon
-    sprite: Structures/Windows/plasma_window.rsi
+    sprite: NT14/Structures/Windows/plasma_window.rsi
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: RGlass
@@ -37,6 +41,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
+    key: walls
     base: pwindow
   - type: Construction
     graph: Window

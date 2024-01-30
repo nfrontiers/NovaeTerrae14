@@ -1,3 +1,7 @@
+# NT14 change:
+# Sprite folders here that have been changed to use NT14-specific sprites have
+# base folder equilvalents that can be removed to save space if/when space wizards upstream is no longer used
+
 - type: entity
   id: Girder
   parent: BaseStructureDynamic
@@ -25,7 +29,7 @@
     graph: Girder
     node: girder
   - type: Sprite
-    sprite: Structures/Walls/solid.rsi
+    sprite: NT14/Structures/Walls/solid.rsi
     state: wall_girder
   - type: Damageable
     damageContainer: Inorganic
@@ -62,7 +66,7 @@
   description: A large structural assembly made out of metal and plasteel; It requires a layer of plasteel before it can be considered a reinforced wall.
   components:
     - type: Sprite
-      sprite: Structures/Walls/solid.rsi
+      sprite: NT14/Structures/Walls/solid.rsi
       state: reinforced_wall_girder
     - type: Construction
       graph: Girder
