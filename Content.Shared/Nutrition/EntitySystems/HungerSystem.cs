@@ -7,6 +7,9 @@ using Content.Shared.Rejuvenate;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
 
+// NT14 includes
+using Content.Shared.Drunk;
+
 namespace Content.Shared.Nutrition.EntitySystems;
 
 public sealed class HungerSystem : EntitySystem
@@ -18,6 +21,9 @@ public sealed class HungerSystem : EntitySystem
     [Dependency] private readonly MobStateSystem _mobState = default!;
     [Dependency] private readonly MovementSpeedModifierSystem _movementSpeedModifier = default!;
     [Dependency] private readonly SharedJetpackSystem _jetpack = default!;
+
+    // NT14 deps
+    [Dependency] private readonly SharedDrunkSystem _drunkSystem = default!;
 
     public override void Initialize()
     {
@@ -147,6 +153,19 @@ public sealed class HungerSystem : EntitySystem
             !_mobState.IsDead(uid))
         {
             _damageable.TryChangeDamage(uid, damage, true, false);
+        }
+
+        // NT14 change: dizziness
+
+        if (component.CurrentThreshold == HungerThreshold.Peckish && _random.Prob(0.1f))
+        {
+            // It kind of sucks that everything that adds dizziness uses this because this
+            // probably shouldn't be effected by lightweight drinker.
+            _drunkSystem.TryApplyDrunkenness(uid, component.UpdateRate.Seconds * 20f, false);
+        }
+        else if (component.CurrentThreshold == HungerThreshold.Starving && _random.Prob(0.3f))
+        {
+            _drunkSystem.TryApplyDrunkenness(uid, component.UpdateRate.Seconds * 12f, false);
         }
     }
 

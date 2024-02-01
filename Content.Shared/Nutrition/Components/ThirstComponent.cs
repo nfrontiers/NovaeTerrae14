@@ -3,6 +3,9 @@ using Content.Shared.Nutrition.EntitySystems;
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 
+// NT14 includes
+using Content.Shared.Damage;
+
 namespace Content.Shared.Nutrition.Components;
 
 [RegisterComponent, NetworkedComponent, Access(typeof(ThirstSystem))]
@@ -43,6 +46,14 @@ public sealed partial class ThirstComponent : Component
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField, AutoNetworkedField]
     public TimeSpan UpdateRate = TimeSpan.FromSeconds(1);
+
+    // NT14 change: thirst damage
+    /// <summary>
+    /// Damage dealt when parched
+    /// </summary>
+    [DataField("thirstDamage")]
+    public DamageSpecifier? ThirstDamage;
+    // end NT14
 
     [DataField("thresholds")]
     [AutoNetworkedField]

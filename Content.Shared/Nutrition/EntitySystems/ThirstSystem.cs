@@ -7,6 +7,11 @@ using JetBrains.Annotations;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
 
+// NT14 includes
+using Content.Shared.Damage;
+using Content.Shared.Mobs.Systems;
+using Content.Shared.Drunk;
+
 namespace Content.Shared.Nutrition.EntitySystems;
 
 [UsedImplicitly]
@@ -17,8 +22,13 @@ public sealed class ThirstSystem : EntitySystem
     [Dependency] private readonly AlertsSystem _alerts = default!;
     [Dependency] private readonly MovementSpeedModifierSystem _movement = default!;
     [Dependency] private readonly SharedJetpackSystem _jetpack = default!;
-
     private ISawmill _sawmill = default!;
+
+    // NT14 deps
+    [Dependency] private readonly SharedDrunkSystem _drunkSystem = default!;
+    [Dependency] private readonly DamageableSystem _damageable = default!;
+    [Dependency] private readonly MobStateSystem _mobState = default!;
+
 
     public override void Initialize()
     {
@@ -177,6 +187,10 @@ public sealed class ThirstSystem : EntitySystem
             ModifyThirst(uid, thirst, -thirst.ActualDecayRate);
             var calculatedThirstThreshold = GetThirstThreshold(thirst, thirst.CurrentThirst);
 
+            // NT14 change: Continuous effects as for hunger
+            DoContinuousThirstEffects(uid, thirst);
+            // end NT14
+
             if (calculatedThirstThreshold == thirst.CurrentThirstThreshold)
                 continue;
 
@@ -189,4 +203,30 @@ public sealed class ThirstSystem : EntitySystem
     {
         component.NextUpdateTime += args.PausedTime;
     }
+
+    // NT-14 specific function
+    private void DoContinuousThirstEffects(EntityUid uid, ThirstComponent? component = null)
+    {
+        if (!Resolve(uid, ref component))
+            return;
+
+        if (component.CurrentThirstThreshold <= ThirstThreshold.Parched &&
+            component.ThirstDamage is { } damage &&
+            !_mobState.IsDead(uid))
+        {
+            _damageable.TryChangeDamage(uid, damage, true, false);
+        }
+
+        if (component.CurrentThirstThreshold == ThirstThreshold.Thirsty && _random.Prob(0.1f))
+        {
+            // It kind of sucks that everything that adds dizziness uses this because this
+            // probably shouldn't be effected by lightweight drinker.
+            _drunkSystem.TryApplyDrunkenness(uid, component.UpdateRate.Seconds * 20f, false);
+        }
+        else if (component.CurrentThirstThreshold == ThirstThreshold.Parched && _random.Prob(0.3f))
+        {
+            _drunkSystem.TryApplyDrunkenness(uid, component.UpdateRate.Seconds * 12f, false);
+        }
+    }
+    // end NT14
 }

@@ -8,12 +8,16 @@
   - type: Hunger
     starvationDamage:
       types:
-        Cold: 0.5
-        Bloodloss: 0.5
+        Cold: 0.05
+        Bloodloss: 0.35
   - type: Icon # It will not have an icon in the adminspawn menu without this. Body parts seem fine for whatever reason.
     sprite: Mobs/Species/Human/parts.rsi
     state: full
   - type: Thirst
+    thirstDamage:
+      types:
+        Cold: 0.05
+        Bloodloss: 0.35
   - type: Butcherable
     butcheringType: Spike
     spawned:
