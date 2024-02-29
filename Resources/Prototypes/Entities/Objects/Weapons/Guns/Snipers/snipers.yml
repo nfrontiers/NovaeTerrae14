@@ -1,3 +1,7 @@
+# NT14 Change:
+# Standartization of ammo names
+# .30 rifle-> 7.62mm
+
 - type: entity
   name: BaseWeaponSniper
   parent: BaseItem
@@ -41,7 +45,7 @@
   name: Kardashev-Mosin
   parent: BaseWeaponSniper
   id: WeaponSniperMosin
-  description: A weapon for hunting, or endless trench warfare. Uses .30 rifle ammo.
+  description: A weapon for hunting, or endless trench warfare. Uses 7.62mm ammo.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Snipers/bolt_gun_wood.rsi

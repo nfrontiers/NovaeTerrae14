@@ -1,6 +1,10 @@
+# NT14 Change:
+# Standartization of ammo names
+# .20 rifle-> 5.56mm
+
 - type: entity
   id: BaseMagazineHeavyRifle
-  name: "magazine (.20 rifle)"
+  name: "magazine (5.56mm)"
   parent: BaseItem
   abstract: true
   components:

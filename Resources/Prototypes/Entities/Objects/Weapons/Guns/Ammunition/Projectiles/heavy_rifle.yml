@@ -1,6 +1,10 @@
+# NT14 Change:
+# Standartization of ammo names
+# .20 rifle-> 5.56mm
+
 - type: entity
   id: BulletHeavyRifle
-  name: bullet (.20 rifle)
+  name: bullet (5.56mm)
   parent: BaseBullet
   noSpawn: true
   components:

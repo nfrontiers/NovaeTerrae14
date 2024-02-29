@@ -1,6 +1,10 @@
+# NT14 Change:
+# Standartization of ammo names
+# .20 rifle-> 5.56mm
+
 - type: entity
   id: BaseCartridgeHeavyRifle
-  name: cartridge (.20 rifle)
+  name: cartridge (5.56mm)
   parent: BaseCartridge
   abstract: true
   components:
