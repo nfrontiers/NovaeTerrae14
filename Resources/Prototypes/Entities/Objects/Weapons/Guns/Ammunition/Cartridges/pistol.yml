@@ -1,6 +1,10 @@
+# NT14 Change:
+# Standartization of ammo names
+# .35 auto -> 9mm
+
 - type: entity
   id: BaseCartridgePistol
-  name: cartridge (.35 auto)
+  name: cartridge (9mm)
   parent: BaseCartridge
   abstract: true
   components:
@@ -20,7 +24,7 @@
 
 - type: entity
   id: CartridgePistol
-  name: cartridge (.35 auto)
+  name: cartridge (9mm)
   parent: BaseCartridgePistol
   components:
   - type: CartridgeAmmo
@@ -28,7 +32,7 @@
 
 - type: entity
   id: CartridgePistolPractice
-  name: cartridge (.35 auto practice)
+  name: cartridge (9mm practice)
   parent: BaseCartridgePistol
   components:
   - type: CartridgeAmmo
@@ -36,7 +40,7 @@
 
 - type: entity
   id: CartridgePistolRubber
-  name: cartridge (.35 auto rubber)
+  name: cartridge (9mm rubber)
   parent: BaseCartridgePistol
   components:
   - type: CartridgeAmmo
@@ -44,7 +48,7 @@
 
 - type: entity
   id: CartridgePistolIncendiary
-  name: cartridge (.35 auto incendiary)
+  name: cartridge (9mm incendiary)
   parent: BaseCartridgePistol
   components:
   - type: CartridgeAmmo
@@ -52,7 +56,7 @@
 
 - type: entity
   id: CartridgePistolUranium
-  name: cartridge (.35 auto uranium)
+  name: cartridge (9mm uranium)
   parent: BaseCartridgePistol
   components:
   - type: CartridgeAmmo

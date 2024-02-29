@@ -1,6 +1,10 @@
+# NT14 Change:
+# Standartization of ammo names
+# .35 auto -> 9mm
+
 - type: entity
   id: BaseMagazinePistol
-  name: pistol magazine (.35 auto)
+  name: pistol magazine (9mm)
   parent: BaseItem
   abstract: true
   components:
@@ -33,7 +37,7 @@
 
 - type: entity
   id: BaseMagazinePistolHighCapacity
-  name: machine pistol magazine (.35 auto)
+  name: machine pistol magazine (9mm)
   parent: BaseItem
   abstract: true
   components:
@@ -66,7 +70,7 @@
 
 - type: entity
   id: BaseMagazinePistolSubMachineGun  # Yeah it's weird but it's pistol caliber
-  name: SMG magazine (.35 auto)
+  name: SMG magazine (9mm)
   parent: BaseItem
   abstract: true
   components:
@@ -99,7 +103,7 @@
 
 - type: entity
   id: MagazinePistolSubMachineGunTopMounted
-  name: WT550 magazine (.35 auto top-mounted)
+  name: WT550 magazine (9mm top-mounted)
   parent: BaseItem
   components:
   - type: Tag
@@ -130,7 +134,7 @@
 
 - type: entity
   id: MagazinePistol
-  name: pistol magazine (.35 auto)
+  name: pistol magazine (9mm)
   parent: BaseMagazinePistol
   components:
   - type: BallisticAmmoProvider
@@ -144,7 +148,7 @@
 
 - type: entity
   id: MagazinePistolPractice
-  name: pistol magazine (.35 auto practice)
+  name: pistol magazine (9mm practice)
   parent: BaseMagazinePistol
   components:
   - type: BallisticAmmoProvider
@@ -158,7 +162,7 @@
 
 - type: entity
   id: MagazinePistolRubber
-  name: pistol magazine (.35 auto rubber)
+  name: pistol magazine (9mm rubber)
   parent: BaseMagazinePistol
   components:
   - type: BallisticAmmoProvider
@@ -172,7 +176,7 @@
 
 - type: entity
   id: MagazinePistolHighCapacity
-  name: machine pistol magazine (.35 auto)
+  name: machine pistol magazine (9mm)
   parent: BaseMagazinePistolHighCapacity
   components:
   - type: BallisticAmmoProvider
@@ -186,7 +190,7 @@
 
 - type: entity
   id: MagazinePistolHighCapacityPractice
-  name: machine pistol magazine (.35 auto practice)
+  name: machine pistol magazine (9mm practice)
   parent: BaseMagazinePistolHighCapacity
   components:
   - type: BallisticAmmoProvider
@@ -200,7 +204,7 @@
 
 - type: entity
   id: MagazinePistolHighCapacityRubber
-  name: machine pistol magazine (.35 auto rubber)
+  name: machine pistol magazine (9mm rubber)
   parent: BaseMagazinePistolHighCapacity
   components:
   - type: BallisticAmmoProvider
@@ -214,7 +218,7 @@
 
 - type: entity
   id: MagazinePistolSubMachineGun
-  name: SMG magazine (.35 auto)
+  name: SMG magazine (9mm)
   parent: BaseMagazinePistolSubMachineGun
   components:
   - type: BallisticAmmoProvider
@@ -234,7 +238,7 @@
 
 - type: entity
   id: MagazinePistolSubMachineGunPractice
-  name: SMG magazine (.35 auto practice)
+  name: SMG magazine (9mm practice)
   parent: BaseMagazinePistolSubMachineGun
   components:
   - type: BallisticAmmoProvider
@@ -248,7 +252,7 @@
 
 - type: entity
   id: MagazinePistolSubMachineGunRubber
-  name: SMG magazine (.35 auto rubber)
+  name: SMG magazine (9mm rubber)
   parent: BaseMagazinePistolSubMachineGun
   components:
   - type: BallisticAmmoProvider
@@ -262,7 +266,7 @@
 
 - type: entity
   id: MagazinePistolSubMachineGunUranium
-  name: SMG magazine (.35 auto rubber)
+  name: SMG magazine (9mm rubber)
   parent: BaseMagazinePistolSubMachineGun
   components:
   - type: BallisticAmmoProvider

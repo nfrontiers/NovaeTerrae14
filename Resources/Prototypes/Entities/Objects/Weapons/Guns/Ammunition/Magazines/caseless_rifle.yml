@@ -1,6 +1,10 @@
+# NT14 Change:
+# Standartization of ammo names
+# .25 caseless -> 7.62mm caseless
+
 - type: entity
   id: BaseMagazineCaselessRifle
-  name: "magazine (.25 caseless)"
+  name: "magazine (7.62mm caseless)"
   parent: BaseItem
   abstract: true
   components:
@@ -34,7 +38,7 @@
 
 - type: entity
   id: BaseMagazineCaselessRifleShort
-  name: "caseless rifle short magazine (.25 caseless)"
+  name: "caseless rifle short magazine (7.62mm caseless)"
   parent: BaseMagazineCaselessRifle
   abstract: true
   components:
@@ -53,7 +57,7 @@
 
 - type: entity
   id: BaseMagazinePistolCaselessRifle
-  name: "pistol magazine (.25 caseless)"
+  name: "pistol magazine (7.62mm caseless)"
   parent: BaseMagazineCaselessRifle
   abstract: true
   components:
@@ -83,7 +87,7 @@
 
 - type: entity
   id: MagazineCaselessRifle10x24
-  name: "box magazine (.25 caseless)"
+  name: "box magazine (7.62mm caseless)"
   parent: BaseMagazineCaselessRifle
   components:
   - type: BallisticAmmoProvider
@@ -94,7 +98,7 @@
 
 - type: entity
   id: MagazinePistolCaselessRifle
-  name: "pistol magazine (.25 caseless)"
+  name: "pistol magazine (7.62mm caseless)"
   parent: BaseMagazinePistolCaselessRifle
   components:
   - type: BallisticAmmoProvider
@@ -114,7 +118,7 @@
 
 - type: entity
   id: MagazinePistolCaselessRiflePractice
-  name: "pistol magazine (.25 caseless practice)"
+  name: "pistol magazine (7.62mm caseless practice)"
   parent: BaseMagazinePistolCaselessRifle
   components:
   - type: BallisticAmmoProvider
@@ -134,7 +138,7 @@
 
 - type: entity
   id: MagazinePistolCaselessRifleRubber
-  name: "pistol magazine (.25 caseless rubber)"
+  name: "pistol magazine (7.62mm caseless rubber)"
   parent: BaseMagazinePistolCaselessRifle
   components:
   - type: BallisticAmmoProvider
@@ -154,7 +158,7 @@
 
 - type: entity
   id: MagazineCaselessRifle
-  name: "magazine (.25 caseless)"
+  name: "magazine (7.62mm caseless)"
   parent: BaseMagazineCaselessRifle
   components:
   - type: BallisticAmmoProvider
@@ -168,7 +172,7 @@
 
 - type: entity
   id: MagazineCaselessRiflePractice
-  name: "magazine (.25 caseless practice)"
+  name: "magazine (7.62mm caseless practice)"
   parent: BaseMagazineCaselessRifle
   components:
   - type: BallisticAmmoProvider
@@ -182,7 +186,7 @@
 
 - type: entity
   id: MagazineCaselessRifleRubber
-  name: "magazine (.25 caseless rubber)"
+  name: "magazine (7.62mm caseless rubber)"
   parent: BaseMagazineCaselessRifle
   components:
   - type: BallisticAmmoProvider
@@ -196,7 +200,7 @@
 
 - type: entity
   id: MagazineCaselessRifleShort
-  name: "short magazine (.25 caseless)"
+  name: "short magazine (7.62mm caseless)"
   parent: BaseMagazineCaselessRifleShort
   components:
   - type: BallisticAmmoProvider
@@ -211,7 +215,7 @@
 
 - type: entity
   id: MagazineCaselessRifleShortPractice
-  name: "short magazine (.25 caseless practice)"
+  name: "short magazine (7.62mm caseless practice)"
   parent: BaseMagazineCaselessRifleShort
   components:
   - type: BallisticAmmoProvider
@@ -226,7 +230,7 @@
 
 - type: entity
   id: MagazineCaselessRifleShortRubber
-  name: "short magazine (.25 caseless rubber)"
+  name: "short magazine (7.62mm caseless rubber)"
   parent: BaseMagazineCaselessRifleShort
   components:
   - type: BallisticAmmoProvider

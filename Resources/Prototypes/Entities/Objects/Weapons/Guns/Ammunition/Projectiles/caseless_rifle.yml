@@ -1,6 +1,10 @@
+# NT14 Change:
+# Standartization of ammo names
+# .25 caseless -> 7.62mm caseless
+
 - type: entity
   id: BulletCaselessRifle
-  name: bullet (.25 caseless)
+  name: bullet (7.62mm caseless)
   parent: BaseBullet
   noSpawn: true
   components:
@@ -11,7 +15,7 @@
 
 - type: entity
   id: BulletCaselessRiflePractice
-  name: bullet (.25 caseless practice)
+  name: bullet (7.62mm caseless practice)
   parent: BaseBulletPractice
   noSpawn: true
   components:
@@ -22,7 +26,7 @@
 
 - type: entity
   id: BulletCaselessRifleRubber
-  name: bullet (.25 caseless rubber)
+  name: bullet (7.62mm caseless rubber)
   parent: BaseBulletRubber
   noSpawn: true
   components:

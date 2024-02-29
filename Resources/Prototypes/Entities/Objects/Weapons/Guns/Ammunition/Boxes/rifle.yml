@@ -1,3 +1,7 @@
+# NT14 Change:
+# Standartization of ammo names
+# .20 rifle -> 5.56mm
+
 - type: entity
   abstract: true
   parent: BaseItem
@@ -27,7 +31,7 @@
 - type: entity
   parent: BaseMagazineBoxRifle
   id: MagazineBoxRifleBig
-  name: ammunition box (.20 rifle)
+  name: ammunition box (5.56mm)
   components:
   - type: BallisticAmmoProvider
     capacity: 200
@@ -47,7 +51,7 @@
 - type: entity
   parent: BaseMagazineBoxRifle
   id: MagazineBoxRifleBigRubber
-  name: ammunition box (.20 rifle rubber)
+  name: ammunition box (5.56mm rubber)
   components:
   - type: BallisticAmmoProvider
     capacity: 200
@@ -68,7 +72,7 @@
 - type: entity
   parent: BaseMagazineBoxRifle
   id: MagazineBoxRifle
-  name: ammunition box (.20 rifle)
+  name: ammunition box (5.56mm)
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeRifle
@@ -82,7 +86,7 @@
 - type: entity
   parent: BaseMagazineBoxRifle
   id: MagazineBoxRiflePractice
-  name: ammunition box (.20 rifle practice)
+  name: ammunition box (5.56mm practice)
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeRiflePractice
@@ -97,7 +101,7 @@
 - type: entity
   parent: BaseMagazineBoxRifle
   id: MagazineBoxRifleRubber
-  name: ammunition box (.20 rifle rubber)
+  name: ammunition box (5.56mm rubber)
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeRifleRubber
@@ -112,7 +116,7 @@
 - type: entity
   id: MagazineBoxRifleIncendiary
   parent: BaseMagazineBoxRifle
-  name: ammunition box (.20 rifle incendiary)
+  name: ammunition box (5.56mm incendiary)
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeRifleIncendiary
@@ -127,7 +131,7 @@
 - type: entity
   id: MagazineBoxRifleUranium
   parent: BaseMagazineBoxRifle
-  name: ammunition box (.20 rifle uranium)
+  name: ammunition box (5.56mm uranium)
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeRifleUranium

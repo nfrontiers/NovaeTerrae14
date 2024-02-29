@@ -1,7 +1,11 @@
+# NT14 Change:
+# Standartization of ammo names
+# .20 rifle -> 5.56mm
+
 # Empty mags
 - type: entity
   id: BaseMagazineRifle
-  name: "magazine (.20 rifle)"
+  name: "magazine (5.56mm)"
   parent: BaseItem
   abstract: true
   components:
@@ -35,7 +39,7 @@
 # Magazines
 - type: entity
   id: MagazineRifle
-  name: "magazine (.20 rifle)"
+  name: "magazine (5.56mm)"
   parent: BaseMagazineRifle
   components:
   - type: BallisticAmmoProvider
@@ -49,7 +53,7 @@
 
 - type: entity
   id: MagazineRiflePractice
-  name: "magazine (.20 rifle practice)"
+  name: "magazine (5.56mm practice)"
   parent: BaseMagazineRifle
   components:
   - type: BallisticAmmoProvider
@@ -63,7 +67,7 @@
 
 - type: entity
   id: MagazineRifleRubber
-  name: "magazine (.20 rifle rubber)"
+  name: "magazine (5.56mm rubber)"
   parent: BaseMagazineRifle
   components:
   - type: BallisticAmmoProvider
@@ -77,7 +81,7 @@
 
 - type: entity
   id: MagazineRifleUranium
-  name: "magazine (.20 rifle uranium)"
+  name: "magazine (5.56mm uranium)"
   parent: BaseMagazineRifle
   components:
   - type: BallisticAmmoProvider

@@ -1,6 +1,10 @@
+# NT14 Change:
+# Standartization of ammo names
+# .35 auto -> 9mm
+
 - type: entity
   id: BaseSpeedLoaderPistol
-  name: "speed loader (.35 auto)"
+  name: "speed loader (9mm)"
   parent: BaseItem
   abstract: true
   components:
@@ -22,7 +26,7 @@
 
 - type: entity
   id: SpeedLoaderPistol
-  name: "speed loader (.35 auto)"
+  name: "speed loader (9mm)"
   parent: BaseSpeedLoaderPistol
   components:
   - type: BallisticAmmoProvider
@@ -41,7 +45,7 @@
 
 - type: entity
   id: SpeedLoaderPistolPractice
-  name: "speed loader (.35 auto practice)"
+  name: "speed loader (9mm practice)"
   parent: BaseSpeedLoaderPistol
   components:
   - type: BallisticAmmoProvider
@@ -60,7 +64,7 @@
 
 - type: entity
   id: SpeedLoaderPistolRubber
-  name: "speed loader (.35 auto rubber)"
+  name: "speed loader (9mm rubber)"
   parent: BaseSpeedLoaderPistol
   components:
   - type: BallisticAmmoProvider

@@ -1,6 +1,10 @@
+# NT14 Change:
+# Standartization of ammo names
+# .30 rifle-> 7.62mm
+
 - type: entity
   id: BaseCartridgeLightRifle
-  name: cartridge (.30 rifle)
+  name: cartridge (7.62mm)
   parent: BaseCartridge
   abstract: true
   components:
@@ -20,7 +24,7 @@
 
 - type: entity
   id: CartridgeLightRifle
-  name: cartridge (.30 rifle)
+  name: cartridge (7.62mm)
   parent: BaseCartridgeLightRifle
   components:
   - type: CartridgeAmmo
@@ -28,7 +32,7 @@
 
 - type: entity
   id: CartridgeLightRiflePractice
-  name: cartridge (.30 rifle practice)
+  name: cartridge (7.62mm practice)
   parent: BaseCartridgeLightRifle
   components:
   - type: CartridgeAmmo
@@ -36,7 +40,7 @@
 
 - type: entity
   id: CartridgeLightRifleRubber
-  name: cartridge (.30 rifle rubber)
+  name: cartridge (7.62mm rubber)
   parent: BaseCartridgeLightRifle
   components:
   - type: CartridgeAmmo
@@ -44,7 +48,7 @@
 
 - type: entity
   id: CartridgeLightRifleIncendiary
-  name: cartridge (.30 rifle incendiary)
+  name: cartridge (7.62mm incendiary)
   parent: BaseCartridgeLightRifle
   components:
   - type: CartridgeAmmo
@@ -52,7 +56,7 @@
 
 - type: entity
   id: CartridgeLightRifleUranium
-  name: cartridge (.30 rifle uranium)
+  name: cartridge (7.62mm uranium)
   parent: BaseCartridgeLightRifle
   components:
   - type: CartridgeAmmo

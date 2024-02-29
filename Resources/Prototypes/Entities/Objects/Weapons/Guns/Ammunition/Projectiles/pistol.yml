@@ -1,6 +1,10 @@
+# NT14 Change:
+# Standartization of ammo names
+# .35 auto -> 9mm
+
 - type: entity
   id: BulletPistol
-  name: bullet (.35 auto)
+  name: bullet (9mm)
   parent: BaseBullet
   noSpawn: true
   components:
@@ -11,7 +15,7 @@
 
 - type: entity
   id: BulletPistolPractice
-  name: bullet (.35 auto practice)
+  name: bullet (9mm practice)
   parent: BaseBulletPractice
   noSpawn: true
   components:
@@ -22,7 +26,7 @@
 
 - type: entity
   id: BulletPistolRubber
-  name: bullet (.35 auto rubber)
+  name: bullet (9mm rubber)
   parent: BaseBulletRubber
   noSpawn: true
   components:
@@ -34,7 +38,7 @@
 - type: entity
   id: BulletPistolIncendiary
   parent: BaseBulletIncendiary
-  name: bullet (.35 auto incendiary)
+  name: bullet (9mm incendiary)
   noSpawn: true
   components:
   - type: Projectile
@@ -46,7 +50,7 @@
 - type: entity
   id: BulletPistolUranium
   parent: BaseBulletUranium
-  name: bullet (.35 auto uranium)
+  name: bullet (9mm uranium)
   noSpawn: true
   components:
   - type: Projectile

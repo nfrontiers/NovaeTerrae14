@@ -1,6 +1,10 @@
+# NT14 Change:
+# Standartization of ammo names
+# .20 rifle -> 5.56mm
+
 - type: entity
   id: BaseCartridgeRifle
-  name: cartridge (.20 rifle)
+  name: cartridge (5.56mm)
   parent: BaseCartridge
   abstract: true
   components:
@@ -20,7 +24,7 @@
 
 - type: entity
   id: CartridgeRifle
-  name: cartridge (.20 rifle)
+  name: cartridge (5.56mm)
   parent: BaseCartridgeRifle
   components:
   - type: CartridgeAmmo
@@ -28,7 +32,7 @@
 
 - type: entity
   id: CartridgeRiflePractice
-  name: cartridge (.20 rifle practice)
+  name: cartridge (5.56mm practice)
   parent: BaseCartridgeRifle
   components:
   - type: CartridgeAmmo
@@ -36,7 +40,7 @@
 
 - type: entity
   id: CartridgeRifleRubber
-  name: cartridge (.20 rifle rubber)
+  name: cartridge (5.56mm rubber)
   parent: BaseCartridgeRifle
   components:
   - type: CartridgeAmmo
@@ -44,7 +48,7 @@
 
 - type: entity
   id: CartridgeRifleIncendiary
-  name: cartridge (.20 rifle incendiary)
+  name: cartridge (5.56mm incendiary)
   parent: BaseCartridgeRifle
   components:
   - type: CartridgeAmmo
@@ -52,7 +56,7 @@
 
 - type: entity
   id: CartridgeRifleUranium
-  name: cartridge (.20 rifle uranium)
+  name: cartridge (5.56mm uranium)
   parent: BaseCartridgeRifle
   components:
   - type: CartridgeAmmo
