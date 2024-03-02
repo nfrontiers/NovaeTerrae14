@@ -1,6 +1,7 @@
 # NT14 Change:
 # Standartization of ammo names
 # .35 auto -> 9mm
+# .45 magnum -> 45 Colt
 
 - type: entity
   name: BaseSMG
@@ -159,7 +160,7 @@
   parent: BaseWeaponSubMachineGun
   id: WeaponSubMachineGunVector
   suffix: Deprecated use Drozd
-  description: An excellent fully automatic Heavy SMG. Uses .45 magnum ammo.
+  description: An excellent fully automatic Heavy SMG. Uses 45 Colt ammo.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/SMGs/vector.rsi
@@ -283,7 +284,7 @@
   name: Vector
   parent: WeaponSubMachineGunVector
   id: WeaponSubMachineGunVectorRubber
-  description: An excellent fully automatic Heavy SMG. Uses .45 magnum ammo.
+  description: An excellent fully automatic Heavy SMG. Uses 45 Colt ammo.
   suffix: Non-Lethal
   components:
   - type: ItemSlots

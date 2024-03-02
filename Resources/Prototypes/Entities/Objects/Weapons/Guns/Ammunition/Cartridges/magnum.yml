@@ -1,6 +1,10 @@
+# NT14 Change:
+# Standartization of ammo names
+# .45 magnum -> 45 Colt
+
 - type: entity
   id: BaseCartridgeMagnum
-  name: cartridge (.45 magnum)
+  name: cartridge (45 Colt)
   parent: BaseCartridge
   abstract: true
   components:
@@ -20,7 +24,7 @@
 
 - type: entity
   id: CartridgeMagnum
-  name: cartridge (.45 magnum)
+  name: cartridge (45 Colt)
   parent: BaseCartridgeMagnum
   components:
   - type: CartridgeAmmo
@@ -28,7 +32,7 @@
 
 - type: entity
   id: CartridgeMagnumPractice
-  name: cartridge (.45 magnum practice)
+  name: cartridge (45 Colt practice)
   parent: BaseCartridgeMagnum
   components:
   - type: CartridgeAmmo
@@ -36,7 +40,7 @@
 
 - type: entity
   id: CartridgeMagnumRubber
-  name: cartridge (.45 magnum rubber)
+  name: cartridge (45 Colt rubber)
   parent: BaseCartridgeMagnum
   components:
   - type: CartridgeAmmo
@@ -44,7 +48,7 @@
 
 - type: entity
   id: CartridgeMagnumIncendiary
-  name: cartridge (.45 magnum incendiary)
+  name: cartridge (45 Colt incendiary)
   parent: BaseCartridgeMagnum
   components:
   - type: CartridgeAmmo
@@ -52,7 +56,7 @@
 
 - type: entity
   id: CartridgeMagnumAP
-  name: cartridge (.45 magnum armor-piercing)
+  name: cartridge (45 Colt armor-piercing)
   parent: BaseCartridgeMagnum
   components:
   - type: CartridgeAmmo
@@ -60,7 +64,7 @@
 
 - type: entity
   id: CartridgeMagnumUranium
-  name: cartridge (.45 magnum uranium)
+  name: cartridge (45 Colt uranium)
   parent: BaseCartridgeMagnum
   components:
   - type: CartridgeAmmo
