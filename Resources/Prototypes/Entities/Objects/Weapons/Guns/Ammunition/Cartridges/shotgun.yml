@@ -1,6 +1,10 @@
-﻿- type: entity
+﻿# NT14 Change:
+# Standartization of ammo names
+# .50 -> 12 gauge
+
+- type: entity
   id: BaseShellShotgun
-  name: shell (.50)
+  name: shell (12 gauge)
   parent: BaseCartridge
   abstract: true
   components:
@@ -23,7 +27,7 @@
 
 - type: entity
   id: ShellShotgunBeanbag
-  name: shell (.50 beanbag)
+  name: shell (12 gauge beanbag)
   parent: BaseShellShotgun
   components:
   - type: Sprite
@@ -38,7 +42,7 @@
 
 - type: entity
   id: ShellShotgunSlug
-  name: shell (.50 slug)
+  name: shell (12 gauge slug)
   parent: BaseShellShotgun
   components:
   - type: Sprite
@@ -54,7 +58,7 @@
 
 - type: entity
   id: ShellShotgunFlare
-  name: shell (.50 flare)
+  name: shell (12 gauge flare)
   parent: BaseShellShotgun
   components:
   - type: Sprite
@@ -69,7 +73,7 @@
 
 - type: entity
   id: ShellShotgun
-  name: shell (.50)
+  name: shell (12 gauge)
   parent: BaseShellShotgun
   components:
   - type: Sprite
@@ -81,7 +85,7 @@
 
 - type: entity
   id: ShellShotgunIncendiary
-  name: shell (.50 incendiary)
+  name: shell (12 gauge incendiary)
   parent: BaseShellShotgun
   components:
   - type: Sprite
@@ -95,7 +99,7 @@
 
 - type: entity
   id: ShellShotgunPractice
-  name: shell (.50 practice)
+  name: shell (12 gauge practice)
   parent: BaseShellShotgun
   components:
   - type: Sprite
@@ -109,7 +113,7 @@
 
 - type: entity
   id: ShellTranquilizer
-  name: shell (.50 tranquilizer)
+  name: shell (12 gauge tranquilizer)
   parent: BaseShellShotgun
   components:
   - type: Sprite
