@@ -1,6 +1,10 @@
+# NT14 Change:
+# Standartization of ammo names
+# .25 caseless -> 7.62mm caseless
+
 - type: entity
   id: BaseCartridgeCaselessRifle
-  name: cartridge (.25 rifle)
+  name: cartridge (7.62mm caseless rifle) #Wasn't .25 caseless but just .25, but im changing it too because idk
   parent: BaseCartridge
   abstract: true
   components:
@@ -23,7 +27,7 @@
 
 - type: entity
   id: CartridgeCaselessRifle
-  name: cartridge (.25 caseless)
+  name: cartridge (7.62mm caseless)
   parent: BaseCartridgeCaselessRifle
   components:
   - type: CartridgeAmmo
@@ -31,7 +35,7 @@
 
 - type: entity
   id: CartridgeCaselessRiflePractice
-  name: cartridge (.25 caseless practice)
+  name: cartridge (7.62mm caseless practice)
   parent: BaseCartridgeCaselessRifle
   components:
   - type: CartridgeAmmo
@@ -39,7 +43,7 @@
 
 - type: entity
   id: CartridgeCaselessRifleRubber
-  name: cartridge (.25 caseless rubber)
+  name: cartridge (7.62mm caseless rubber)
   parent: BaseCartridgeCaselessRifle
   components:
   - type: CartridgeAmmo

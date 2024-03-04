@@ -1,6 +1,10 @@
-﻿- type: entity
+﻿# NT14 Change:
+# Standartization of ammo names
+# .50 -> 12 gauge
+
+- type: entity
   id: PelletShotgunSlug
-  name: pellet (.50 slug)
+  name: pellet (12 gauge slug)
   noSpawn: true
   parent: BaseBullet
   components:
@@ -14,7 +18,7 @@
 
 - type: entity
   id: PelletShotgunBeanbag
-  name: beanbag (.50)
+  name: beanbag (12 gauge)
   noSpawn: true
   parent: BaseBullet
   components:
@@ -30,7 +34,7 @@
 
 - type: entity
   id: PelletShotgun
-  name: pellet (.50)
+  name: pellet (12 gauge)
   noSpawn: true
   parent: BaseBullet
   components:
@@ -44,7 +48,7 @@
 
 - type: entity
   id: PelletShotgunIncendiary
-  name: pellet (.50 incendiary)
+  name: pellet (12 gauge incendiary)
   noSpawn: true
   parent: BaseBulletIncendiary
   components:
@@ -61,7 +65,7 @@
 
 - type: entity
   id: PelletShotgunPractice
-  name: pellet (.50 practice)
+  name: pellet (12 gauge practice)
   noSpawn: true
   parent: BaseBulletPractice
   components:
@@ -90,7 +94,7 @@
 
 - type: entity
   id: PelletShotgunTranquilizer
-  name: pellet (.50 tranquilizer)
+  name: pellet (12 gauge tranquilizer)
   noSpawn: true
   parent: BaseBulletPractice
   components:
@@ -117,7 +121,7 @@
 
 - type: entity
   id: PelletShotgunFlare
-  name: pellet (.50 flare)
+  name: pellet (12 gauge flare)
   noSpawn: true
   components:
   - type: Physics
@@ -167,7 +171,7 @@
 
 - type: entity
   id: PelletShotgunUranium
-  name: pellet (.50 uranium)
+  name: pellet (12 gauge uranium)
   noSpawn: true
   parent: BaseBullet
   components:

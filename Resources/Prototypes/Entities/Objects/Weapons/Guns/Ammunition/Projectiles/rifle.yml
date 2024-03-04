@@ -1,6 +1,10 @@
+# NT14 Change:
+# Standartization of ammo names
+# .20 rifle -> 5.56mm
+
 - type: entity
   id: BulletRifle
-  name: bullet (0.20 rifle)
+  name: bullet (5.56mm)
   parent: BaseBullet
   noSpawn: true
   components:
@@ -11,7 +15,7 @@
 
 - type: entity
   id: BulletRiflePractice
-  name: bullet (0.20 rifle practice)
+  name: bullet (5.56mm practice)
   parent: BaseBulletPractice
   noSpawn: true
   components:
@@ -22,7 +26,7 @@
 
 - type: entity
   id: BulletRifleRubber
-  name: bullet (0.20 rifle rubber)
+  name: bullet (5.56mm rubber)
   parent: BaseBulletRubber
   noSpawn: true
   components:
@@ -34,7 +38,7 @@
 - type: entity
   id: BulletRifleIncendiary
   parent: BaseBulletIncendiary
-  name: bullet (0.20 rifle incendiary)
+  name: bullet (5.56mm incendiary)
   noSpawn: true
   components:
   - type: Projectile
@@ -46,7 +50,7 @@
 - type: entity
   id: BulletRifleUranium
   parent: BaseBulletUranium
-  name: bullet (0.20 rifle uranium)
+  name: bullet (5.56mm uranium)
   noSpawn: true
   components:
   - type: Projectile
