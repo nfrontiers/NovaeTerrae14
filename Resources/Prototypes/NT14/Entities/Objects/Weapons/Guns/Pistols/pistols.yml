@@ -59,6 +59,11 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: NT14/Objects/Weapons/Guns/Pistols/molly.rsi
+  - type: Gun
+    fireRate: 6
+    availableModes:
+    - FullAuto
+    - SemiAuto
     
 - type: entity
   name: BE Reliable
