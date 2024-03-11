@@ -1,0 +1,82 @@
+- type: entity
+  name: BE Covert
+  parent: BaseWeaponPistol
+  id: WeaponPistolBECovert
+  description: This is the Black Eye Covert, manufactured and designed by Black Eye Security. Silent but deadly, chambered to fire 7.62mm caseless ammunition. Perfect for taking out any threat discreetly, without worrying about picking up any empty cartridges.
+  components:
+  - type: Sprite
+    sprite: NT14/Objects/Weapons/Guns/Pistols/mandella.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: NT14/Objects/Weapons/Guns/Pistols/mandella.rsi
+  - type: Gun
+    fireRate: 4
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/silenced.ogg
+      params:
+        volume: -14
+    availableModes:
+    - SemiAuto
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePistolCaselessRifle
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistolCaselessRifle
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgeCaselessRifle
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeCaselessRifle
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+
+- type: entity
+  name: BE Spitfire
+  parent: WeaponPistolMk58
+  id: WeaponPistolBESpitfire
+  description: This is a Black Eye Spitfire, manufactured and designed by Black Eye Security. Its a machine pistol variant of the Black Eye Reliable, chambered in 9mm. For when you want a problem to go away as soon as you catch it.
+  components:
+  - type: Sprite
+    sprite: NT14/Objects/Weapons/Guns/Pistols/molly.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: NT14/Objects/Weapons/Guns/Pistols/molly.rsi
+  - type: Gun
+    fireRate: 6
+    availableModes:
+    - FullAuto
+    - SemiAuto
+    
+- type: entity
+  name: BE Reliable
+  parent: WeaponPistolMk58
+  id: WeaponPistolBEReliable
+  description: This is a Black Eye Reliable, manufactured and designed by Black Eye Security. This is considered the bread and butter offering, which was highly popular amongst all. Simple and reliable, perfect for dispatching threats.
+  components:
+  - type: Sprite
+    sprite: NT14/Objects/Weapons/Guns/Pistols/paco.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: NT14/Objects/Weapons/Guns/Pistols/paco.rsi

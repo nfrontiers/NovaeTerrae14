@@ -1,0 +1,10 @@
+- type: entity
+  name: BE Pioneer
+  parent: WeaponRevolverMateba
+  id: WeaponRevolverBEPioneer
+  description: This is the Black Eye Pioneer, manufactured and designed by Black Eye Security. This revolver uses powerful 45 Colt ammunition to take out threats in style. Reliable, with minimal failure rates, its seen as the most consistent weapon on the market. See you space cowboy.
+  components:
+  - type: Sprite
+    sprite: NT14/Objects/Weapons/Guns/Revolvers/mateba.rsi
+  - type: Clothing
+    sprite: NT14/Objects/Weapons/Guns/Revolvers/mateba.rsi
