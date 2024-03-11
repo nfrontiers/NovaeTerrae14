@@ -1,3 +1,8 @@
+# NT14 Change:
+# Standartization of ammo names
+# .25 caseless -> 7.62mm caseless
+# 7.62mm damage 19 -> 100
+
 - type: entity
   id: BulletCaselessRifle
   name: bullet (.25 caseless)
@@ -7,7 +12,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 19
+        Piercing: 100
 
 - type: entity
   id: BulletCaselessRiflePractice

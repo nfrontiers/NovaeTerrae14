@@ -1,3 +1,8 @@
+# NT14 Change:
+# Standartization of ammo names
+# .20 rifle -> 5.56mm
+# 5.56mm damage 17 -> 70
+
 - type: entity
   id: BulletRifle
   name: bullet (0.20 rifle)
@@ -7,7 +12,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 17
+        Piercing: 70
 
 - type: entity
   id: BulletRiflePractice
@@ -40,8 +45,8 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 2
-        Heat: 15
+        Blunt: 8
+        Heat: 62
   
 - type: entity
   id: BulletRifleUranium
@@ -52,6 +57,6 @@
   - type: Projectile
     damage:
       types:
-        Radiation: 7
-        Piercing: 8
+        Radiation: 30
+        Piercing: 40
         

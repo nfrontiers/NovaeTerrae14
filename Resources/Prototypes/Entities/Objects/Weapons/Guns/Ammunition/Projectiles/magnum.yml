@@ -1,3 +1,8 @@
+# NT14 Change:
+# Standartization of ammo names
+# .45 magnum -> 45 Colt
+# 45 Colt damage 35 -> 60
+
 - type: entity
   id: BulletMagnum
   name: bullet (.45 magnum)
@@ -7,7 +12,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 35
+        Piercing: 60
 
 - type: entity
   id: BulletMagnumPractice
@@ -42,8 +47,8 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 3
-        Heat: 32
+        Blunt: 5
+        Heat: 55
         
 - type: entity
   id: BulletMagnumAP
@@ -54,7 +59,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 26 # 20% decrease
+        Piercing: 26 # 20% decrease ; NT14: Not changing armor piercing yet because yes
     ignoreResistances: true
 
 - type: entity
@@ -66,5 +71,5 @@
   - type: Projectile
     damage:
       types:
-        Radiation: 15
-        Piercing: 20
+        Radiation: 25
+        Piercing: 35

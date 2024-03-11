@@ -1,3 +1,8 @@
+# NT14 Change:
+# Standartization of ammo names
+# .35 auto -> 9mm
+# 9mm damage 16 -> 40
+
 - type: entity
   id: BulletPistol
   name: bullet (.35 auto)
@@ -7,7 +12,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 16
+        Piercing: 40
 
 - type: entity
   id: BulletPistolPractice
@@ -40,8 +45,8 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 2
-        Heat: 14
+        Blunt: 6
+        Heat: 34
 
 - type: entity
   id: BulletPistolUranium
@@ -52,5 +57,5 @@
   - type: Projectile
     damage:
       types:
-        Radiation: 6
-        Piercing: 10
+        Radiation: 15
+        Piercing: 25
